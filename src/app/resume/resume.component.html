@@ -1,0 +1,154 @@
+<div class="container text-center">
+    <button (click)="DownloadFile()"class="btn btn-primary mb-5 shadow border">Download PDF Resume</button>
+    <div class="pb-2">
+        <accordion [isAnimated]="true" class="shadow">
+            <accordion-group [(isOpen)]="isWorkExperienceOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link" style="text-decoration: none;">Work Experience</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isWorkExperienceOpen" style="color: white;">></div>
+                        <div *ngIf="isWorkExperienceOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+                <div style="text-align: left;">
+                    <h2 class="mb-0">Cloud Waze (Aug 2023 - Oct 2023)</h2>
+                    <h3 class="text-primary">Software Engineer Intern</h3>
+                    <ul>
+                        <li>Developed an analytics dashboard leveraging Java, Angular, and RESTful services, leading to a 30% enhancement in data visualization.</li>
+                        <li>Migrated the analytics application to AWS using EC2 and RDS, resulting in a 50% boost in scalability.</li>
+                        <li>Implemented JUnit and Mockito for unit testing, ensuring a robust codebase with a 60% test coverage.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="mb-0">ADP (July 2021 - July 2022)</h2>
+                    <h3 class="text-primary">Full Stack Developer</h3>
+                    <ul>
+                        <li>Designed and migrated 50% of the company web pages from AngularJS to StencilJS using typescript.</li>
+                        <li>Developed Rest APIs using JAVA to improve intersystem communication between UI and MongoDB by almost 75%.</li>
+                        <li>Leveraged Junit for unit testing and Selenium for automation testing to increase test case coverage by 35%.</li>
+                        <li>Accelerated deployment by 40% by developing a CI/CD pipeline using Jenkins and configured servers using AWS EC2.</li>
+                        <li>Managed source code using Bitbucket, improved team collaboration with Confluence, and tracked issues daily with JIRA, ensuring project
+                            consistency and efficiency through Agile development practices.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="mb-0">ADP (May 2020 - Feb 2021)</h2>
+                    <h3 class="text-primary">Application Developer Intern</h3>
+                    <ul>
+                        <li>Built web applications using Angular 8, HTML5, Bootstrap, JAVA, Spring, and MongoDB facilitating more than 50k employees in storing and uploading their tax documents.</li>
+                        <li>Streamlined CI/CD pipelines using Docker, reducing build and deployment times by 40%.</li>
+                        <li>Participated in core team meetings, design reviews, and requirements sessions to understand business needs and operational procedures, aiding in project planning and execution.</li>
+                    </ul>
+
+                    <hr>
+
+                    <h2 class="mb-0">Right Data (Aug 2019 - May 2020)</h2>
+                    <h3 class="text-primary">Software Developer</h3>
+                    <ul>
+                        <li>Utilized ReactJS, JAVA, and Spring Boot to establish 10+ microservices.
+                        <li>Automated, mapping between MySQL databases and Java objects with Hibernate ORM reducing query writing by 50%.
+                        <li>Utilized Kafka for asynchronous messaging between microservices, improving system scalability by 30% and enhancing reliability.
+                        <li>Managed manual deployments and constructed CI/CD pipelines, parallelizing test runs, resulting in an 80% reduction in overall test run time.</li>
+                    </ul>
+                </div>
+            </accordion-group>
+
+            <accordion-group [(isOpen)]="isEducationOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link" style="text-decoration: none;">Education</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isEducationOpen" style="color: white;">></div>
+                        <div *ngIf="isEducationOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+            <div style="text-align: left;">
+                <h2 class="mb-0">University of Cincinnati</h2>
+                <h3 class="text-primary">Master's in Computer Science</h3>
+                <h4>Aug 2022 - Apr 2024</h4>
+                <h4>GPA: 3.96 out of 4</h4>
+
+                <hr>
+
+                <h2 class="mb-0">CVR College of Engineering</h2>
+                <h3 class="text-primary">Bachelor's of Technology in Computer Science</h3>
+                <h4>Aug 2017 - May 2021</h4>
+                <h4>GPA: 3.8 out of 4</h4>
+            </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isCertificationsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link" style="text-decoration: none;">Certifications</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isCertificationsOpen" style="color: white;">></div>
+                        <div *ngIf="isCertificationsOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+            <div style="text-align: left;">
+                <h5>• Microsoft Certified: Azure Fundamentals.</h5>
+                <h5>• Database Programming with SQL by Oracle.</h5>
+                <h5>• Database Programming with PL/SQL by Oracle</h5>
+                <h5>• Database Design by Oracle.</h5>
+            </div>
+            </accordion-group>
+            <accordion-group [(isOpen)]="isSkillsOpen">
+                <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
+                    <div style="visibility: hidden;">></div>
+                    <div class="btn-link" style="text-decoration: none;">Skills</div>
+                    <div style="width: 10.95px;">
+                        <div *ngIf="!isSkillsOpen" style="color: white;">></div>
+                        <div *ngIf="isSkillsOpen" style="color: white;">v</div>
+                    </div>
+                </button>
+            <div class="row" style="text-align: left;">
+                <div class="col">
+                    <h4>Programming Languages</h4>
+                    <ul>
+                        <li>Java</li>
+                        <li>C</li> 
+                        <li>C#</li> 
+                        <li>Python</li>
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>XML</li>
+                        <li>SQL</li>
+                        <li>NoSQL</li>
+                    </ul>
+                </div>
+                    <div class="col">
+                    <h4>Framework</h4>
+                    <ul>
+                        <li>Spring</li>
+                        <li>Angular</li> 
+                        <li>ReactJS</li> 
+                        <li>StencilJS</li>
+                        <li>Hibernate</li>
+                    </ul>
+                    </div>
+                    <div class="col">
+                    <h4>Software Tools</h4>
+                    <ul>
+                        <li>Jenkins</li>
+                        <li>Docker</li> 
+                        <li>Kubernetes</li> 
+                        <li>Postman</li>
+                        <li>Redux</li>
+                        <li>Kafka</li>
+                        <li>AWS</li>
+                        <li>JUnit</li>
+                        <li>Mockito</li>
+                        <li>Selenium</li>
+                        <li>SonarQube</li>
+                    </ul>
+                </div>
+            </div>
+            </accordion-group>
+        </accordion>
+    </div>
+</div>
